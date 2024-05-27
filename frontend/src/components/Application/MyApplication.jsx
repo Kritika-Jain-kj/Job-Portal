@@ -19,7 +19,7 @@ const MyApplications = () => {
       if (user && user.role === 'Employer') {
         axios
           .get(
-            'https://job-portal-backend-8w2h.onrender.comapi/v1/application/employer/getall',
+            'https://job-portal-backend-8w2h.onrender.com/api/v1/application/employer/getall',
             {
               withCredentials: true,
             }
@@ -30,7 +30,7 @@ const MyApplications = () => {
       } else {
         axios
           .get(
-            'https://job-portal-backend-8w2h.onrender.comapi/v1/application/jobseeker/getall',
+            'https://job-portal-backend-8w2h.onrender.com/api/v1/application/jobseeker/getall',
             {
               withCredentials: true,
             }
@@ -53,7 +53,7 @@ const MyApplications = () => {
     try {
       await axios
         .delete(
-          `https://job-portal-backend-8w2h.onrender.comapi/v1/application/delete/${id}`,
+          `https://job-portal-backend-8w2h.onrender.com/api/v1/application/delete/${id}`,
           {
             withCredentials: true,
           }
