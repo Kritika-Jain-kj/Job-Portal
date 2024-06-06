@@ -12,7 +12,7 @@ import { errorMiddleware } from './middlewares/error.js'
 const app = express()
 
 dotenv.config({ path: './config/config.env' })
-console.log('Frontend URL:', process.env.FRONTEND_URL) // Add this line to check
+console.log('Frontend URL:', process.env.FRONTEND_URL)
 
 app.use(
   cors({
